@@ -14,10 +14,10 @@ const MISSING = "Expected key `nums` with comma-separated list of numbers.";
 /** Finds mean of nums in qs: returns {operation: "mean", result } */
 app.get('/mean?:nums', function (req, res) {
   let values = req.query.nums
-  console.log("values", values)
-  console.log(typeof values)
-  console.log(Array.isArray(values))
-  debugger
+  // console.log("values", values)
+  // console.log(typeof values)
+  // console.log(Array.isArray(values))
+  // debugger
   let nums = convertStrNums(values)
 
   let meanValue = findMean(nums)

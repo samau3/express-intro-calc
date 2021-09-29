@@ -7,10 +7,10 @@ function convertStrNums(strNums) {
   // if the conversion isn't successful, throw a BadRequestError and will
   // be handled in your route
   let splitNums = strNums.split(',')
-  console.log(splitNums)
+  // console.log(splitNums)
   let convertedNums = splitNums.map(value => {
     let number = Number(value)
-    if (isNan(number)) throw new BadRequestError()
+    if (isNaN(number)) throw new BadRequestError()
     else return number
   })
 
